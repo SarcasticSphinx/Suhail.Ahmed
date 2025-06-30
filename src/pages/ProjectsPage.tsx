@@ -165,9 +165,9 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Project Image */}
         <CardItem translateZ="100" className="w-full mt-4">
           <div className="relative h-48 w-full overflow-hidden rounded-xl">
-            <a
-              href={project.imageUrl}
-              // alt={project.title}
+            <img
+              src={project.imageUrl}
+              alt={project.title}
               className="object-cover group-hover/card:scale-110 transition-transform duration-300"
             />
           </div>
