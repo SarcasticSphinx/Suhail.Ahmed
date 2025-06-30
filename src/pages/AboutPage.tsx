@@ -53,7 +53,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="/certificate_1.png"
+              src="https://i.ibb.co/whZKkYQt/certificate-1.png"
               alt={`Project`}
               width={500}
               height={500}
@@ -65,7 +65,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="/certificate_2.png"
+              src="https://i.ibb.co/LzpPHTfL/certificate-2.png"
               alt={`Project`}
               width={500}
               height={500}
@@ -96,7 +96,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="intellecto.png"
+              src="https://i.ibb.co/7dGmNMSy/intellecto.png"
               alt={`intellecto screenshot`}
               width={500}
               height={500}
@@ -108,7 +108,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="green_knowledge.png"
+              src="https://i.ibb.co/zTj80fTB/green-knowledge.png"
               alt={`green_knowledge screenshot`}
               width={500}
               height={500}
@@ -120,7 +120,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="chatty.png"
+              src="https://i.ibb.co/RpD6w6j5/chatty.png"
               alt={`chatty screenshot`}
               width={500}
               height={500}
@@ -132,7 +132,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="morse_code.png"
+              src="https://i.ibb.co/pvwYxs7X/morse-code.png"
               alt={`morse_code screenshot`}
               width={500}
               height={500}
@@ -158,7 +158,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="plantify.png"
+              src="https://i.ibb.co/7d65KBZX/plantify.png"
               alt={`plantify screenshot`}
               width={500}
               height={500}
@@ -170,7 +170,7 @@ const data = [
             className="overflow-hidden rounded-lg"
           >
             <img
-              src="ruet_epayment.png"
+              src="https://i.ibb.co/XxKyS0rR/ruet-epayment.png"
               alt={`ruet_epayment screenshot`}
               width={500}
               height={500}
@@ -315,7 +315,7 @@ const AboutPage = () => {
             handle="hazardous_wizard"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="profile.jpg"
+            avatarUrl="https://i.ibb.co/WN85y3xb/profile.png"
             showUserInfo={true}
             enableTilt={true}
             onContactClick={() => console.log("Contact clicked")}
@@ -399,13 +399,13 @@ const AboutPage = () => {
             >
               <Quote className="mb-4 text-4xl text-blue-400 opacity-30" />
 
-                <motion.blockquote
+              <motion.blockquote
                 whileHover={{ scale: 1.02 }}
                 className="mb-6 text-2xl font-medium leading-relaxed sm:text-3xl"
-                >
+              >
                 &quot;The journey is the reward. Every step forward is a victory
                 worth celebrating.&quot;
-                </motion.blockquote>
+              </motion.blockquote>
 
               <motion.div
                 initial={{ opacity: 0 }}

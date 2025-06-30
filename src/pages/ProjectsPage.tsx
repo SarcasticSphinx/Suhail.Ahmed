@@ -39,7 +39,7 @@ const projects: Project[] = [
     title: "Intellecto",
     description:
       "A tutor-finding platform that connects students with qualified tutors. Features include profile management, search, and authentication.",
-    imageUrl: "/intellecto.png",
+    imageUrl: "https://i.ibb.co/7dGmNMSy/intellecto.png",
     stack: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
     demoUrl: "https://dreamy-eclair-576ab3.netlify.app/",
     repoUrl: "https://github.com/SarcasticSphinx/Intellecto",
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Chatty",
     description:
       "A real-time chat application with user authentication and live messaging using Socket.IO.",
-    imageUrl: "/chatty.png",
+    imageUrl: "https://i.ibb.co/RpD6w6j5/chatty.png",
     stack: ["React", "Node.js", "Socket.IO", "Express", "MongoDB"],
     demoUrl: "https://chatty-b2my.onrender.com/",
     repoUrl: "https://github.com/SarcasticSphinx/Chatty",
@@ -59,7 +59,7 @@ const projects: Project[] = [
     title: "GreenKnowledge",
     description:
       "A platform for gardening enthusiasts to share tips, connect, ask questions, and join plant-related events.",
-    imageUrl: "/green_knowledge.png",
+    imageUrl: "https://i.ibb.co/zTj80fTB/green-knowledge.png",
     stack: ["React.js", "TypeScript", "Tailwind CSS", "Firebase", "MongoDB"],
     demoUrl: "https://quiet-dusk-277d19.netlify.app/",
     repoUrl: "https://github.com/SarcasticSphinx/GreenKnowledge",
@@ -68,7 +68,7 @@ const projects: Project[] = [
     title: "SailSignal",
     description:
       "A web-based Morse code translator and signal simulator designed for quick learning and experimentation.",
-    imageUrl: "/morse_code.png",
+    imageUrl: "https://i.ibb.co/pvwYxs7X/morse-code.png",
     stack: ["React", "TailwindCss", "JavaScript"],
     demoUrl: "https://sarcasticsphinx.github.io/MorseCode/",
     repoUrl: "https://github.com/SarcasticSphinx/MorseCode",
@@ -77,7 +77,7 @@ const projects: Project[] = [
     title: "Plantify",
     description:
       "A plant identification app that uses image upload to provide plant details, care tips, and classification.",
-    imageUrl: "/plantify.png",
+    imageUrl: "https://i.ibb.co/7d65KBZX/plantify.png",
     stack: ["HTML", "CSS", "JavaScript", "Machine Learning (in progress)"],
     demoUrl: "https://sarcasticsphinx.github.io/Plantify/",
     repoUrl: "https://github.com/SarcasticSphinx/Plantify",
@@ -86,7 +86,7 @@ const projects: Project[] = [
     title: "RUET E-Payment",
     description:
       "A UI concept for a digital e-payment portal tailored for RUET students to manage tuition and fees online.",
-    imageUrl: "/ruet_epayment.png",
+    imageUrl: "https://i.ibb.co/XxKyS0rR/ruet-epayment.png",
     stack: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://sarcasticsphinx.github.io/RUET-ePayment/",
     repoUrl: "https://github.com/SarcasticSphinx/RUET-ePayment",
