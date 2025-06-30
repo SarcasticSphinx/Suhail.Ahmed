@@ -60,7 +60,7 @@ const HomePage = () => {
         style={{ animationDelay: "2s" }}
       ></div>
       {/* Content */}
-      <div className="flex min-w-screen justify-between lg:px-30 items-center gap-20 relative">
+      <div className="flex flex-col sm:flex-row min-w-screen justify-between lg:px-30 items-center gap-20 relative px-4">
         {/* left Side */}
         <div className="z-10">
           <div className="flex flex-col gap-4">

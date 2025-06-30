@@ -103,9 +103,9 @@ export default function Home({ slides, initialSlide = 0 }: CarouselProps) {
       </div>
 
       {/* Floating Dock */}
-      <div className="fixed w-fit mx-auto bottom-5 left-0 right-0 z-10">
         <FloatingDock
-          desktopClassName="bg-green-200/10 backdrop-blur-md border border-green-400/20 shadow-lg"
+          desktopClassName="fixed w-fit mx-auto bottom-5 left-0 right-0 z-10 bg-green-200/10 backdrop-blur-md border border-green-400/20 shadow-lg"
+          mobileClassName="fixed top-5 right-2 z-10 shadow-lg"
           items={dockItems.map((item) => ({
             ...item,
             onClick: (e: React.MouseEvent) => {
@@ -114,7 +114,6 @@ export default function Home({ slides, initialSlide = 0 }: CarouselProps) {
             },
           }))}
         />
-      </div>
     </div>
   );
 }
