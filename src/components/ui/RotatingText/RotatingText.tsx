@@ -239,9 +239,9 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
                   {wordObj.characters.map((char, charIndex) => (
                     <motion.span
                       key={charIndex}
-                      initial={initial}
-                      animate={animate}
-                      exit={exit}
+                      initial={initial as TargetAndTransition | VariantLabels | boolean | undefined}
+                      animate={animate as TargetAndTransition | VariantLabels | boolean | undefined}
+                      exit={exit as TargetAndTransition | VariantLabels | undefined}
                       transition={{
                         ...transition,
                         delay: getStaggerDelay(
