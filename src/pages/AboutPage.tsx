@@ -1,20 +1,12 @@
 "use client";
 import { Timeline } from "@/components/ui/timeline";
 import React, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import {
   FaReact,
   FaNodeJs,
   FaDatabase,
-  FaAws,
-  FaDocker,
-  FaGithub,
   FaHtml5,
   FaCss3,
   FaJs,
@@ -26,13 +18,9 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiExpress,
-  SiNestjs,
-  SiGraphql,
   SiPostgresql,
   SiMongodb,
   SiFirebase,
-  SiPrisma,
-  SiVercel,
 } from "react-icons/si";
 import {
   FiClock,
@@ -349,7 +337,7 @@ const AboutPage = () => {
             My <span className="text-emerald-400">Tech Stack</span>
           </motion.h3>
 
-          {techStack.map((stack, index) => (
+          {techStack.map((stack) => (
             <motion.div
               key={stack.category}
               variants={staggerContainer}
@@ -411,13 +399,13 @@ const AboutPage = () => {
             >
               <Quote className="mb-4 text-4xl text-blue-400 opacity-30" />
 
-              <motion.blockquote
+                <motion.blockquote
                 whileHover={{ scale: 1.02 }}
                 className="mb-6 text-2xl font-medium leading-relaxed sm:text-3xl"
-              >
-                "The journey is the reward. Every step forward is a victory
-                worth celebrating."
-              </motion.blockquote>
+                >
+                &quot;The journey is the reward. Every step forward is a victory
+                worth celebrating.&quot;
+                </motion.blockquote>
 
               <motion.div
                 initial={{ opacity: 0 }}
@@ -482,7 +470,7 @@ const AboutPage = () => {
                   transition={{ delay: 0.2 }}
                   className="text-xl font-semibold md:text-2xl"
                 >
-                  Let's collaborate on your next project!
+                  Let&#39;s collaborate on your next project!
                 </motion.h3>
                 <motion.p
                   initial={{ opacity: 0, x: -20 }}
@@ -493,8 +481,8 @@ const AboutPage = () => {
                 >
                   I specialize in creating modern, responsive web applications
                   with cutting-edge technologies. Whether you need a full
-                  project build, consultation, or team augmentation, I'd love to
-                  discuss how I can help.
+                  project build, consultation, or team augmentation, I&apos;d
+                  love to discuss how I can help.
                 </motion.p>
               </div>
 

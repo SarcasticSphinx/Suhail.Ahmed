@@ -3,11 +3,10 @@
 import {
   motion,
   useMotionValue,
-  useTransform,
   animate,
   MotionValue,
 } from "framer-motion";
-import { useEffect, useState, ReactNode } from "react";
+import React, { useEffect, useState, ReactNode } from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -106,10 +105,10 @@ const categoryIcons: CategoryIcons = {
   "AI & Data": <GiArtificialIntelligence />,
 };
 
-export default function SkillsPage(): JSX.Element {
+export default function SkillsPage() {
   const [hoveredSkill, setHoveredSkill] = useState<Skill | null>(null);
   const count: MotionValue<number> = useMotionValue(0);
-  const rounded = useTransform(count, Math.round);
+  // const rounded = useTransform(count, Math.round);
 
   useEffect(() => {
     const animation = animate(count, 100, { duration: 3 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence, PanInfo } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 import { useState } from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import { ReactNode } from "react";

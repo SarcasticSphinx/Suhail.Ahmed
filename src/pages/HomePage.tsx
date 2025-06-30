@@ -47,8 +47,6 @@ const social_links = [
   },
 ];
 
-const items = ["FULL STACK DEVELOPER", "WEB DESIGNER"];
-
 const HomePage = () => {
   return (
     <div className="min-h-screen flex justify-center items-center text-white font-poppins">

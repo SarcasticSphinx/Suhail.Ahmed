@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import {
   BsFacebook,
   BsTwitterX,
@@ -12,7 +12,6 @@ import {
 } from "react-icons/bs";
 import { OrbitingCircles } from "../components/ui/orbiting-circles";
 import SignupFormDemo from "../components/signup-form-demo";
-import { div } from "framer-motion/m";
 
 const social_links = [
   {
@@ -50,11 +49,6 @@ const social_links = [
 const ContactPage = () => {
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimation();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
   useEffect(() => {
     if (!isHovered) {
@@ -85,15 +79,19 @@ const ContactPage = () => {
 
       {/* heading */}
       <h1 className="text-5xl md:text-5xl font-bold text-center text-neutral-800 dark:text-neutral-100">
-        Let's Get In Touch
+        Let&apos;s Get In Touch
       </h1>
       <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300 text-center">
-        I'd love to hear from you — whether it’s a question, project idea, or
+        I&apos;d love to hear from you — whether it’s a question, project idea, or
         just saying hello.
       </p>
       <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-30 max-w-screen">
         {/* Spinning Social Carousel */}
-        <div className="relative flex h-[500px] w-full flex-col items-center justify-center rounded-lg md:shadow-xl">
+        <div
+          className="relative flex h-[500px] w-full flex-col items-center justify-center rounded-lg md:shadow-xl"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
             Connect
           </span>
