@@ -25,33 +25,6 @@ export default function Home({ slides, initialSlide = 0 }: CarouselProps) {
     setCurrentSlide(index);
   };
 
-  const nextSlide = () => {
-    const next = (currentSlide + 1) % slides.length;
-    navigateToSlide(next);
-  };
-
-  const prevSlide = () => {
-    const prev = (currentSlide - 1 + slides.length) % slides.length;
-    navigateToSlide(prev);
-  };
-
-  const handleWheel = (event: React.WheelEvent) => {
-    // Prevent default scrolling behavior
-    event.preventDefault();
-    
-    const threshold = 50; // Minimum scroll amount to trigger slide change
-    
-    if (Math.abs(event.deltaX) > threshold) {
-      // Horizontal scroll or vertical scroll
-      if (event.deltaX > 0) {
-        // Scroll right/down - go to next slide
-        nextSlide();
-      } else {
-        // Scroll left/up - go to previous slide
-        prevSlide();
-      }
-    }
-  };
 
   const variants = {
     enter: (direction: "left" | "right") => ({
@@ -79,7 +52,6 @@ export default function Home({ slides, initialSlide = 0 }: CarouselProps) {
   return (
     <div 
       className="relative w-full min-h-screen overflow-x-hidden"
-      onWheel={handleWheel}
     >
       {/* Full-screen carousel slides */}
       <div className="absolute inset-0">

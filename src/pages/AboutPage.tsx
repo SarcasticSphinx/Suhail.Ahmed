@@ -494,12 +494,12 @@ const AboutPage = () => {
                 className="flex flex-col sm:flex-row items-center gap-4"
               >
                 <motion.a
-                  href="/contact"
+                  href="tel:+8801990370042"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center gap-2 rounded-lg bg-emerald-400 px-6 py-3 font-medium text-xs md:text-lg text-black transition-all hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/20"
                 >
-                  Schedule a Call
+                  Call Now
                   <FiExternalLink />
                 </motion.a>
                 <motion.a

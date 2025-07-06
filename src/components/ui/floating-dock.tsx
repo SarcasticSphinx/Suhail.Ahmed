@@ -8,6 +8,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import { DownloadIcon } from "lucide-react";
 import { useRef, useState } from "react";
 
 interface DockItem {
@@ -98,7 +99,7 @@ const FloatingDockDesktop = ({
   const mouseX = useMotionValue(Infinity);
   return (
     <motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
+      onMouseMove={(e: React.MouseEvent) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         "mx-auto hidden h-16 items-end gap-4 rounded-2xl px-4 pb-3 md:flex ",
@@ -108,6 +109,20 @@ const FloatingDockDesktop = ({
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
+      <a
+        href="https://drive.google.com/file/d/1rVZWmXx2EUevaro3vSRS2AdoYO07GAqj/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-end"
+        style={{ textDecoration: "none" }}
+      >
+        <IconContainer
+          mouseX={mouseX}
+          title="Download CV"
+          icon={<DownloadIcon className="w-5 h-5" />}
+          onClick={() => {}}
+        />
+      </a>
     </motion.div>
   );
 };

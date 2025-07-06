@@ -9,7 +9,6 @@ import {
   UserIcon,
   FolderIcon,
   MailIcon,
-  DownloadIcon,
 } from "lucide-react";
 import { GiSkills } from "react-icons/gi";
 
@@ -44,23 +43,6 @@ export default function page() {
       icon: <MailIcon className="w-4 h-4" />,
       href: "#contact",
       content: <ContactPage />,
-    },
-    {
-      title: "Download CV",
-      icon: <DownloadIcon className="w-4 h-4" />,
-      href: "#cv",
-      content: (
-        <div className="p-8 w-full h-full flex flex-col gap-4 items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">Download My CV</h1>
-          <a
-            href="/cv/toha-resume.pdf"
-            download
-            className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-100"
-          >
-            Download PDF
-          </a>
-        </div>
-      ),
     },
   ];
 
